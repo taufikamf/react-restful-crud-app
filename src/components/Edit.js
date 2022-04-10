@@ -17,7 +17,7 @@ const Edit = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.put("http://127.0.0.1:8000/api/programs/"+data.id, {
+        axios.put("https://laravelapp-restul-api.herokuapp.com/api/programs/"+data.id, {
             id_product: getId,
             productName: getName,
             price : getPrice,

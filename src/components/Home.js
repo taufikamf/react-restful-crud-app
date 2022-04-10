@@ -11,7 +11,7 @@ const Home = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/api/programs")
+        fetch("https://laravelapp-restul-api.herokuapp.com/api/programs")
           .then(res => res.json())
           .then(
             (result) => {
@@ -31,7 +31,7 @@ const Home = () => {
       const handleDelete = (id) => {
         let confirmation = window.confirm("Yakin ingin menghapus data?")
         if(confirmation){
-          axios.delete("http://127.0.0.1:8000/api/programs/"+id)
+          axios.delete("https://laravelapp-restul-api.herokuapp.com/api/programs/"+id)
         .then(() => {
           window.alert("Data berhasil dihapus");
           window.location.reload();

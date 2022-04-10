@@ -21,7 +21,7 @@ const Create = () => {
             quantity : getQty,
         }
 
-        axios.post("http://127.0.0.1:8000/api/programs", formData).then((response) => {
+        axios.post("https://laravelapp-restul-api.herokuapp.com/api/programs", formData).then((response) => {
             console.log(response.status);
             window.alert('Success add New Product');
             navigate("/", { replace: true });
