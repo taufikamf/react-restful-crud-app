@@ -1,0 +1,43 @@
+.divUtama{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+table{
+    width: 80%;
+    align-self: center;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+tr, th {
+    padding: 10px;
+}
+
+.submitButton{
+    margin-top: 50px;
+    width: 100px;
+    align-self: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+    padding: 50px;
+}
+
+.delButton{
+    margin-left: 5px;
+    border: 0;
+    background-color: transparent;
+}
+
+.delButton svg{
+    color: red;
+}
